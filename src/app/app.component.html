@@ -1,0 +1,42 @@
+<div class="container-fluid" style="height:100vh; border: 0px solid red">
+  <div class="row" style="background: lightblue; border: 0px solid red">
+    <div class="col-12" style="height: 10vh; border: 0px solid red">
+      <h3 style="margin: 0px; border: 0px solid red">EngineeringLookups</h3>
+    </div>
+  </div>
+  <div class="row" style="height:80vh; overflow-y: auto;">
+<!--     <div class="col-6 action-btn" (click)="firstMacro()">
+    Click Me
+      <i class="fa fa-chevron-left"></i>
+    </div> -->
+    <div class="col-6 action-btn" *ngFor="let menu of menus" (click)="firstMacro(menu['macro'])">
+      <i class="fa fa-home"></i>{{menu['name']}}
+    </div>
+    <!-- <table class="btable">
+      <caption>table title and/or explanatory text</caption>
+      <tbody>
+        <tr>
+          <td>
+            <div class="col-6 action-btn" (click)="firstMacro()">
+            Click Me
+              <i class="fa fa-chevron-left"></i>
+            </div>
+          </td>
+          <td>
+            <div class="col-6 action-btn">
+              <i class="fa fa-home"></i>
+            </div>
+          </td>
+        </tr>
+      </tbody>
+    </table> -->
+  </div>
+  <div class="row">
+    <div class="col-6 footer-btn">
+      <i class="fa fa-angle-left"></i>
+    </div>
+    <div class="col-6 footer-btn">
+      <i class="fa fa-home"></i>
+    </div>
+  </div>
+</div>
